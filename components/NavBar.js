@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="fixed top-0 flex h-16 w-screen items-center justify-between">
+    <nav className="sticky top-0 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
       <div className="ml-2 flex cursor-pointer items-center gap-2">
         <Link href="/">
-          <a>
+          <a className="h-16">
             <Image
               src="/jhsoi-logo.png"
-              alt="JHSOI Logo"
+              alt="Navigation Bar JHSOI Logo"
               layout="fixed"
               width="64"
               height="64"

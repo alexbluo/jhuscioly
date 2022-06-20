@@ -1,13 +1,15 @@
 import React from "react";
+import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 const Layout = (props) => {
   return (
     <>
       <NavBar />
-      <div className="container mx-auto min-h-screen px-8 py-16">
+      <main className="container mx-auto min-h-screen px-16 py-8">
         {props.children}
-      </div>
+      </main>
+      <Footer />
     </>
   );
 };

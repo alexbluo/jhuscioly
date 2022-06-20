@@ -1,3 +1,5 @@
-export default function Info() {
+const Info = () => {
   return <div>info</div>;
-}
+};
+
+export default Info;

@@ -1,3 +1,5 @@
-export default function Updates() {
-  return <div>updates</div>
-}
+const Updates = () => {
+  return <div>updates</div>;
+};
+
+export default Updates;
