@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="sticky top-0 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
-      <div className="ml-2 cursor-pointer my-auto gap-2">
+    <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
+      <div className="my-auto ml-2 cursor-pointer gap-2">
         <Link href="/">
           <a className="flex items-center">
             <Image

@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps }) {
     <>
       {/* // TODO: figure out how to make favicon bigger */}
       <Head>
-        <link rel="icon" href="/favicon.png" />
         {/* maybe add titles for each page as well */}
         <title>JHSOI</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         <Component {...pageProps} />
