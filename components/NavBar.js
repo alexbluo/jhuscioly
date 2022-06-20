@@ -1,10 +1,17 @@
+import React from "react";
+import MobileNav from "./MobileNav";
 import NavItem from "./NavItem";
 import Link from "next/link";
 import Image from "next/image";
 
 const NavBar = () => {
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <header>
+    <header className="sticky top-0 z-50">
+      <div className="sm:hidden">
+        <MobileNav open={open} setOpen={setOpen} />
+      </div>
       <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
         <div className="my-auto ml-2 cursor-pointer gap-2">
           <Link href="/">
@@ -20,7 +27,20 @@ const NavBar = () => {
             </a>
           </Link>
         </div>
-        <ul className="mr-8 flex gap-8">
+
+        {/* TODO: need to set open to false when screen is resized */}
+
+        <div
+          className={`mr-8 cursor-pointer text-2xl font-bold text-black duration-200 ease-in-out hover:text-blue-light sm:hidden ${
+            open ? "text-blue-light" : ""
+          }`}
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          Menu
+        </div>
+        <ul className="mr-8 hidden gap-8 sm:flex">
           <NavItem to="/info">Info</NavItem>
           <NavItem to="/updates">Updates</NavItem>
           <NavItem to="/board">Board</NavItem>
