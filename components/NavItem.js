@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const NavItem = (props) => {
   return (
-    <li className="text-2xl font-bold">
+    <li className="text-2xl font-bold text-black duration-200 ease-in-out hover:text-blue-light">
       <Link href={props.to}>
         <a>{props.children}</a>
       </Link>

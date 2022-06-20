@@ -11,6 +11,7 @@ const MobileNav = (props) => {
       {/* TODO: need to set open to false when links are clicked and format the dropdown menu better */}
 
       <ul className="mr-8 flex-col gap-8 text-center">
+        <NavItem to="/">Register</NavItem>
         <NavItem to="/info">Info</NavItem>
         <NavItem to="/updates">Updates</NavItem>
         <NavItem to="/board">Board</NavItem>

@@ -44,6 +44,7 @@ const NavBar = () => {
           Menu
         </div>
         <ul className="mr-8 hidden gap-8 sm:flex">
+          <NavItem to="/">Register</NavItem>
           <NavItem to="/info">Info</NavItem>
           <NavItem to="/updates">Updates</NavItem>
           <NavItem to="/board">Board</NavItem>
