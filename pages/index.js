@@ -17,7 +17,7 @@ const Index = () => {
             </h2>
           </div>
 
-          <h3 className="text-center text-2xl font-bold text-blue-dark text-opacity-75 lg:text-right">
+          <h3 className="text-center text-2xl font-semibold text-blue-dark text-opacity-75 lg:text-right">
             JHU Homewood Campus, February 11
           </h3>
           <div className="flex justify-center lg:justify-end">

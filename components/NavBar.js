@@ -4,6 +4,7 @@ import NavItem from "./NavItem";
 import Link from "next/link";
 import Image from "next/image";
 
+// TODO: make navbar initially white no border, change on scroll
 const NavBar = () => {
   const [open, setOpen] = React.useState(false);
 
@@ -23,7 +24,9 @@ const NavBar = () => {
                 width="64"
                 height="64"
               />
-              <h1 className="text-4xl font-bold text-blue-dark">JHSOI</h1>
+              <h1 className="bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text text-4xl font-bold text-transparent">
+                JHSOI
+              </h1>
             </a>
           </Link>
         </div>
