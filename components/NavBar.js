@@ -7,13 +7,15 @@ const NavBar = () => {
     <nav className="fixed top-0 flex h-16 w-screen items-center justify-between">
       <div className="ml-2 flex cursor-pointer items-center gap-2">
         <Link href="/">
-          <Image
-            src="/jhsoi-logo.png"
-            alt="JHSOI Logo"
-            layout="fixed"
-            width="64"
-            height="64"
-          />
+          <a>
+            <Image
+              src="/jhsoi-logo.png"
+              alt="JHSOI Logo"
+              layout="fixed"
+              width="64"
+              height="64"
+            />
+          </a>
         </Link>
         <span className="text-4xl font-bold text-blue-dark">JHSOI</span>
       </div>
