@@ -1,7 +1,7 @@
 const Button = (props) => {
   return (
-    <button className="bg-blue-light py-4 px-6">
-      <span className="font-bold text-white">{props.children}</span>
+    <button className="cursor-pointer rounded bg-blue-light py-4 px-6 font-semibold text-white">
+      {props.children}
     </button>
   );
 };
