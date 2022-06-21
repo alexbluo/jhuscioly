@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
-      <div className="my-auto ml-2 cursor-pointer gap-2">
+      <header className="my-auto ml-2 cursor-pointer gap-2">
         <Link href="/">
           <a className="flex items-center">
             <Image
@@ -33,7 +33,7 @@ export default function NavBar() {
             </h1>
           </a>
         </Link>
-      </div>
+      </header>
 
       {/* TODO: need to set open to false when screen is resized */}
       {/* EDIT: this can be done by setting hidden on the menu contents using css */}
