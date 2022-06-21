@@ -1,10 +1,11 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNavItems from "./MobileNavItems";
 import NavItem from "./NavItem";
 
 // TODO: make navbar initially white no border, change on scroll
-export default function NavBar() {
+export default React.memo(() => {
   // i want you to practice with this, just focus on making the mobile nav open/close and enabled on small screens
   // first import the useState hook. this allows the component to keep track of state, like the number on a counter or whether the navbar is open
   // useState returns the state itself and a function to set the state.
@@ -50,4 +51,4 @@ export default function NavBar() {
       {/* conditionally render MobileNavItems here. dont start too far up */}
     </nav>
   );
-}
+});

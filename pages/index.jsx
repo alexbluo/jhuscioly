@@ -22,7 +22,7 @@ export default function Index() {
           </h3>
           <div className="flex justify-center lg:justify-end">
             {/* TODO: link to google form */}
-            <a href="/">
+            <a href="/" target="_blank">
               <Button>Register</Button>
             </a>
           </div>

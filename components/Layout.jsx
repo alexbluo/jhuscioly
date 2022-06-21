@@ -1,8 +1,7 @@
-import React from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 
-export default React.memo(({ children }) => {
+export default function Layout({ children }) {
   return (
     <>
       <NavBar />
@@ -12,4 +11,4 @@ export default React.memo(({ children }) => {
       <Footer />
     </>
   );
-});
+}
