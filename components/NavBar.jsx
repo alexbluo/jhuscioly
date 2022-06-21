@@ -22,7 +22,14 @@ export default function NavBar() {
           </a>
         </Link>
       </div>
-      <ul className="mr-8 flex gap-8">
+
+      {/* TODO: need to set open to false when screen is resized */}
+
+      <div className="mr-8 cursor-pointer text-2xl font-bold text-black duration-200 ease-in-out hover:text-blue-light sm:hidden">
+        Menu
+      </div>
+      <ul className="mr-8 hidden gap-8 sm:flex">
+        <NavItem to="/">Register</NavItem>
         <NavItem to="/info">Info</NavItem>
         <NavItem to="/updates">Updates</NavItem>
         <NavItem to="/board">Board</NavItem>
