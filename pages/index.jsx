@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import Button from "../components/Button";
 
 export default function Index() {
   return (
@@ -22,12 +20,13 @@ export default function Index() {
             JHU Homewood Campus, February 11
           </h3>
           <div className="flex justify-center lg:justify-end">
-            <Button>
-              {/* TODO: link to google form */}
-              <Link href="/">
-                <a>Register</a>
-              </Link>
-            </Button>
+            {/* TODO: link to google form */}
+            <a
+              className="items-center rounded bg-blue-light py-4 px-6 font-semibold text-white"
+              href="/"
+            >
+              Register
+            </a>
           </div>
         </div>
         <div className="relative aspect-square w-full lg:w-1/2">
