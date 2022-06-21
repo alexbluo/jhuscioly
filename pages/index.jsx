@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Button from "../components/Button";
 
 export default function Index() {
   return (
@@ -21,11 +22,8 @@ export default function Index() {
           </h3>
           <div className="flex justify-center lg:justify-end">
             {/* TODO: link to google form */}
-            <a
-              className="items-center rounded bg-blue-light py-4 px-6 font-semibold text-white"
-              href="/"
-            >
-              Register
+            <a href="/">
+              <Button>Register</Button>
             </a>
           </div>
         </div>
