@@ -1,9 +1,9 @@
-import NavItem from "./NavItem";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import NavItem from "./NavItem";
 
 // TODO: make navbar initially white no border, change on scroll
-const NavBar = () => {
+export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
       <div className="my-auto ml-2 cursor-pointer gap-2">
@@ -29,6 +29,4 @@ const NavBar = () => {
       </ul>
     </nav>
   );
-};
-
-export default NavBar;
+}

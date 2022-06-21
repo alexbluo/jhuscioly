@@ -2,16 +2,14 @@ import React from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 
-const Layout = (props) => {
+export default React.memo(({ children }) => {
   return (
     <>
       <NavBar />
       <main className="container mx-auto min-h-screen px-16 py-8">
-        {props.children}
+        {children}
       </main>
       <Footer />
     </>
   );
-};
-
-export default React.memo(Layout);
+});

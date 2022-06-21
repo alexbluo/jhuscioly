@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import "../globals.css";
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       {/* // TODO: figure out how to make favicon bigger */}
@@ -19,5 +19,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 // TODO: getstaticprops
-
-export default MyApp;

@@ -1,10 +1,11 @@
-import Head from "next/head";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../components/Button";
 
-const Index = () => {
+export default function Index() {
   return (
-    <>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div className="flex flex-col items-center lg:flex-row">
         <div className="flex min-w-full flex-col gap-4 text-center lg:w-1/2 lg:min-w-0 lg:text-left">
           {/* TODO: infinitely animate gradients? */}
@@ -23,7 +24,9 @@ const Index = () => {
           <div className="flex justify-center lg:justify-end">
             <Button>
               {/* TODO: link to google form */}
-              <a>Register</a>
+              <Link href="/">
+                <a>Register</a>
+              </Link>
             </Button>
           </div>
         </div>
@@ -31,8 +34,6 @@ const Index = () => {
           <Image src="/jhsoi-logo.png" alt="JHSOI Logo" layout="fill" />
         </div>
       </div>
-    </>
+    </motion.div>
   );
-};
-
-export default Index;
+}
