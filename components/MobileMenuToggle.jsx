@@ -14,9 +14,13 @@ function Path(props) {
   );
 }
 
-export default function MobileMenuToggle({ handleClick }) {
+export default function MobileMenuToggle({ open, handleClick }) {
   return (
-    <button className="block sm:hidden" onClick={handleClick}>
+    <motion.button
+      className="block sm:hidden"
+      animate={open ? "open" : "closed"}
+      onClick={handleClick}
+    >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           variants={{
@@ -39,6 +43,6 @@ export default function MobileMenuToggle({ handleClick }) {
           }}
         />
       </svg>
-    </button>
+    </motion.button>
   );
 }

@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 
+// TODO: move board to home?
 export default function Board() {
   return (
     <div className="grid w-full gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

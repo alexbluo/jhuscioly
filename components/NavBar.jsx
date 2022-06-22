@@ -47,7 +47,7 @@ function NavBar() {
         <NavItem to="/updates">Updates</NavItem>
         <NavItem to="/board">Board</NavItem>
       </ul>
-      {/* conditionally render MobileNavItems here. dont start too far up */}
+      {/* conditionally render MobileNavItems here. dont position the items too far up */}
     </nav>
   );
 }
