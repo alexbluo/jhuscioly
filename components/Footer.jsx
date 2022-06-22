@@ -1,5 +1,7 @@
 import React from "react";
 
-export default React.memo(() => {
+function Footer() {
   return <footer className="h-64 w-screen bg-black" />;
-});
+}
+
+export default React.memo(Footer);

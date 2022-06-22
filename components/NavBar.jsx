@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import MobileNavItems from "./MobileNavItems";
+import MobileMenuItems from "./MobileMenuItems";
+import MobileMenuToggle from "./MobileMenuToggle";
 import NavItem from "./NavItem";
 
 // TODO: make navbar initially white no border, change on scroll
-export default React.memo(() => {
+function NavBar() {
   // i want you to practice with this, just focus on making the mobile nav open/close and enabled on small screens
   // first import the useState hook. this allows the component to keep track of state, like the number on a counter or whether the navbar is open
   // useState returns the state itself and a function to set the state.
@@ -19,16 +20,16 @@ export default React.memo(() => {
 
   return (
     <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
-      <header className="my-auto ml-2 cursor-pointer gap-2">
+      <header className="ml-2 h-full cursor-pointer gap-2">
         <Link href="/">
-          <a className="flex items-center">
-            <Image
-              src="/jhsoi-logo.png"
-              alt="Navigation Bar JHSOI Logo"
-              layout="fixed"
-              width="64"
-              height="64"
-            />
+          <a className="flex h-full items-center">
+            <div className="relative aspect-square h-full">
+              <Image
+                src="/jhsoi-logo.png"
+                alt="Navigation Bar JHSOI Logo"
+                layout="fill"
+              />
+            </div>
             <h1 className="bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text text-4xl font-bold text-transparent">
               JHSOI
             </h1>
@@ -37,11 +38,9 @@ export default React.memo(() => {
       </header>
 
       {/* TODO: need to set open to false when screen is resized */}
-      {/* EDIT: this can be done by setting hidden on the menu contents using css */}
+      {/* EDIT: this can be done by setting hidden on the menu items using css */}
 
-      <div className="mr-8 cursor-pointer text-2xl font-bold text-black duration-200 ease-in-out hover:text-blue-light sm:hidden">
-        Menu
-      </div>
+      <MobileMenuToggle />
       <ul className="mr-8 hidden gap-8 sm:flex">
         <NavItem to="/">Register</NavItem>
         <NavItem to="/info">Info</NavItem>
@@ -51,4 +50,6 @@ export default React.memo(() => {
       {/* conditionally render MobileNavItems here. dont start too far up */}
     </nav>
   );
-});
+}
+
+export default React.memo(NavBar);
