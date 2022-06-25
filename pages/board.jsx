@@ -8,6 +8,7 @@ export default function Board() {
       <Card url="/daniel.jpg" name="Daniel Jin" title="Director" />
       <Card url="/ria.jpg" name="Ria Jha" title="Director" />
       <Card url="/margaret.png" name="Margaret Li" title="Director" />
+      <Card url="/alex.jpg" name="Alex Luo" title="Web Developer" />
     </div>
   );
 }
