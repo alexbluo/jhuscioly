@@ -12,16 +12,12 @@ function Footer() {
           </a>
         </Link>
         <p>© JHSOI 2022. All rights reserved.</p>
-        <Link href="/">
-          <a>
-            <FaInstagram />
-          </a>
-        </Link>
-        <Link href="mailto: jhso.invite@gmail.com">
-          <a>
-            <FaEnvelope />
-          </a>
-        </Link>
+        <a>
+          <FaInstagram />
+        </a>
+        <a href="mailto: jhso.invite@gmail.com">
+          <FaEnvelope />
+        </a>
       </div>
     </footer>
   );
