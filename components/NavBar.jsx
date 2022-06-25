@@ -1,4 +1,5 @@
 import React from "react";
+import { useCycle } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenuItems from "./MobileMenuItems";
@@ -17,6 +18,8 @@ function NavBar() {
   // for animations, keep in mind that the first time a component renders, it will run its css animations. css animations only transition from one animatable property to another value of the exact same property.
   // framer motion is intuitively built around that concept
   // feel free to ask any questions
+
+  const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
     <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
@@ -40,14 +43,18 @@ function NavBar() {
       {/* TODO: need to set open to false when screen is resized */}
       {/* EDIT: this can be done by setting hidden on the menu items using css */}
 
-      <MobileMenuToggle />
+      <div className="mr-8">
+        <MobileMenuToggle open={isOpen} handleClick={() => toggleOpen()} />
+      </div>
+
       <ul className="mr-8 hidden gap-8 sm:flex">
         <NavItem to="/">Register</NavItem>
         <NavItem to="/info">Info</NavItem>
         <NavItem to="/updates">Updates</NavItem>
         <NavItem to="/board">Board</NavItem>
       </ul>
-      {/* conditionally render MobileNavItems here. dont position the items too far up */}
+
+      {isOpen && <MobileMenuItems />}
     </nav>
   );
 }
