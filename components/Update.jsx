@@ -10,7 +10,7 @@ export default function Update({ title, date, children }) {
         <h3>{date}</h3>
       </div>
       <div className="m-1">
-        <p className="mt-2">{children}</p>
+        <p className="mt-2 text-lg">{children}</p>
       </div>
     </div>
   );
