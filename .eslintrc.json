@@ -1,10 +1,17 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "plugin:react/jsx-runtime", "prettier"],
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "modules": true
     }
   },
   "rules": {
