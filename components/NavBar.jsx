@@ -1,12 +1,12 @@
 import React from "react";
-import { AnimatePresence, useCycle } from "framer-motion";
+import { useCycle } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenuItems from "./MobileMenuItems";
 import MobileMenuToggle from "./MobileMenuToggle";
 import NavItem from "./NavItem";
 
-// TODO: make navbar initially white no border, change on scroll
+// TODO: navbar border on scroll and on mobile open
 function NavBar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
@@ -39,10 +39,7 @@ function NavBar() {
         <NavItem to="/updates">Updates</NavItem>
         <NavItem to="/board">Board</NavItem>
       </ul>
-
-      <AnimatePresence>
-        {isOpen && <MobileMenuItems open={isOpen} />}
-      </AnimatePresence>
+      {isOpen && <MobileMenuItems open={isOpen} />}
     </nav>
   );
 }
