@@ -77,8 +77,8 @@ export default function Info() {
             equipment. Failure to do so will result in a tier.
           </li>
           <li>
-            The university cannot provide any protective equipment for
-            competitors.
+            Unfortunately, the university is unable to provide any protective
+            equipment to competitors.
           </li>
         </ul>
         <h2 className="mt-8 mb-4 bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text text-3xl font-black tracking-wide text-transparent">

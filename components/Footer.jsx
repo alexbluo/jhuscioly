@@ -1,23 +1,22 @@
 import React from "react";
-import Link from "next/link";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
 
+// TODO: content
 function Footer() {
   return (
-    <footer className="mt-8 h-64 w-screen bg-white">
-      <div className="flex justify-center gap-8 text-lg">
-        <Link href="/">
-          <a>
-            <b>JHSOI</b>
-          </a>
-        </Link>
-        <p>© JHSOI 2022. All rights reserved.</p>
-        <a>
-          <FaInstagram />
-        </a>
-        <a href="mailto: jhso.invite@gmail.com">
-          <FaEnvelope />
-        </a>
+    <footer className="h-64 w-screen bg-blue-dark p-8 text-sm text-white">
+      <div className="flex h-full flex-col">
+        <div className="flex h-full justify-between gap-8">
+          <div>
+            <a>
+              <FaInstagram />
+            </a>
+            <a href="mailto: jhso.invite@gmail.com">
+              <FaEnvelope />
+            </a>
+          </div>
+        </div>
+        <p>Copyright © 2022 JHSOI. All rights reserved.</p>
       </div>
     </footer>
   );

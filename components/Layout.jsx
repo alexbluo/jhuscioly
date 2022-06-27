@@ -4,10 +4,10 @@ import NavBar from "./NavBar";
 export default function Layout({ children }) {
   return (
     <>
-      <NavBar />
-      <main className="container mx-auto min-h-screen px-16 py-8">
-        {children}
-      </main>
+      <div className="min-h-screen">
+        <NavBar />
+        <main className="container mx-auto px-16 py-8">{children}</main>
+      </div>
       <Footer />
     </>
   );
