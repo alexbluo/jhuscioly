@@ -12,15 +12,20 @@ export default function Info() {
       <h3 className="mt-16 text-xl font-semibold text-blue-dark text-opacity-75">
         The Johns Hopkins Science Olympiad Invitational (JHSOI), hosted by
         Maryland Science Olympiad at Johns Hopkins and the Charm City Science
-        League, will occur on February 11th at the Johns Hopkins University
-        Homewood Campus.
+        League (CCSL), will occur on February 11th at the Johns Hopkins
+        University Homewood Campus. JHSOI will be open to both in-state and
+        out-of-state division B teams. Participating teams will compete under
+        one of two subdivisions, with Baltimore teams associated with CCSL
+        competing in the Baltimore league and all other teams competing in the
+        open league.
       </h3>
 
       <h2 className="mt-8 mb-4 bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text text-3xl font-black tracking-wide text-transparent">
         Tournament Registration
       </h2>
       <p className="mb-4 text-lg">
-        Teams can register for the tournament{" "}
+        All divison B teams are eligable to register for JHSOI. Teams can
+        register for the tournament{" "}
         <a className="text-blue-dark underline hover:text-blue-light">here</a>.
       </p>
       <h2 className="mt-8 mb-4 bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text text-3xl font-black tracking-wide text-transparent">
