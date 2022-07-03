@@ -10,7 +10,7 @@ function Footer() {
           <a>
             <FaInstagram />
           </a>
-          <a href="mailto: jhso.invite@gmail.com">
+          <a href="mailto:jhso.invite@gmail.com">
             <FaEnvelope />
           </a>
         </div>

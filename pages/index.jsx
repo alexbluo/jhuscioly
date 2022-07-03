@@ -48,18 +48,6 @@ export default function Index() {
           <Image src="/jhsoi-logo.png" alt="JHSOI Logo" layout="fill" />
         </div>
       </div>
-      <div className="mb-8 text-6xl font-black tracking-wide text-transparent">
-        <h3 className="text-xl font-semibold text-blue-dark text-opacity-75">
-          The Johns Hopkins Science Olympiad Invitational (JHSOI), hosted by
-          Maryland Science Olympiad at Johns Hopkins and the Charm City Science
-          League (CCSL), will occur on February 11th at the Johns Hopkins
-          University Homewood Campus. JHSOI will be open to both in-state and
-          out-of-state division B teams. Participating teams will compete under
-          one of two subdivisions, with Baltimore teams associated with CCSL
-          competing in the Baltimore league and all other teams competing in the
-          open league.
-        </h3>
-      </div>
     </motion.div>
   );
 }
