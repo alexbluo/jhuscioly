@@ -6,12 +6,12 @@ import MobileMenuItems from "./MobileMenuItems";
 import MobileMenuToggle from "./MobileMenuToggle";
 import NavItem from "./NavItem";
 
-// TODO: navbar border on scroll and on mobile open, animate out from center on scroll?
+// TODO: navbar border on scroll and on mobile open?
 function NavBar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between border border-b-blue-light bg-white">
+    <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between bg-white sm:border-b sm:border-blue-light">
       <header className="ml-2 h-full cursor-pointer gap-2">
         <Link href="/">
           <a className="flex h-full items-center">
