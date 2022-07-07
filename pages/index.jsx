@@ -8,11 +8,11 @@ export default function Index() {
       <div className="flex flex-col items-center lg:flex-row">
         <div className="flex min-w-full flex-col gap-4 text-center lg:w-1/2 lg:min-w-0 lg:text-left">
           <div className="text-center text-6xl font-black tracking-wide text-transparent lg:text-right">
-            <h2 className="bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text">
-              Johns Hopkins
-            </h2>
             <h2 className="bg-gradient-to-r from-green-300 to-blue-light bg-clip-text">
-              Science Olympiad Invitational
+              Science Olympiad Invitational at
+            </h2>
+            <h2 className="bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text">
+              Johns Hopkins University
             </h2>
           </div>
 

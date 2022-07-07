@@ -10,7 +10,7 @@ export default function Info() {
         </h2>
       </div>
       <h3 className="mt-16 text-xl font-semibold text-blue-dark text-opacity-75">
-        The Johns Hopkins Science Olympiad Invitational (JHSOI), hosted by
+        The Science Olympiad Invitational at Johns Hopkins (JHSOI), hosted by
         Maryland Science Olympiad at Johns Hopkins and the Charm City Science
         League (CCSL), will occur on February 11th at the Johns Hopkins
         University Homewood Campus. JHSOI will be open to both in-state and
