@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../components/Button";
 
+// TODO: move all to one page, need graphics (like pic of jhu), rounded corners, dark blue bg with white text, add flex stats (maybe infographic)
 export default function Index() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

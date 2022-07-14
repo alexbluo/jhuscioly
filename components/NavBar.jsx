@@ -6,7 +6,6 @@ import MobileMenuItems from "./MobileMenuItems";
 import MobileMenuToggle from "./MobileMenuToggle";
 import NavItem from "./NavItem";
 
-// TODO: navbar border on scroll and on mobile open?
 function NavBar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
