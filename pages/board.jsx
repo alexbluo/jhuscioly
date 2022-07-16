@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Card from "../components/Card";
 
-// TODO: move board to home?
 export default function Board() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
