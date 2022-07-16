@@ -10,7 +10,7 @@ function NavBar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <nav className="sticky top-0 z-50 flex h-16 w-screen items-center justify-between bg-white">
+    <nav className="absolute top-0 z-50 flex h-16 w-screen items-center justify-between bg-white">
       <header className="ml-2 h-full cursor-pointer gap-2">
         <Link href="/">
           <a className="flex h-full items-center">
