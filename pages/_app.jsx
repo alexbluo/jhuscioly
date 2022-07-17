@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 import "../globals.css";
 
 export default function App({ Component, pageProps }) {
@@ -11,9 +11,9 @@ export default function App({ Component, pageProps }) {
         <title>JHSOI</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {/* test navbar here for 404, might not work as expected with react scroll? */}
+      <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

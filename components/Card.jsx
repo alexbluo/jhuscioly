@@ -1,12 +1,8 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Card({ url, name, title }) {
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      className="rounded-lg bg-gradient-to-r from-blue-dark to-blue-light text-center"
-    >
+    <div>
       <div className="relative aspect-square w-full">
         <Image
           className="rounded-t-lg"
@@ -16,8 +12,10 @@ export default function Card({ url, name, title }) {
           objectFit="contain"
         />
       </div>
-      <h2 className="mt-2 text-xl font-semibold text-white">{name}</h2>
-      <h2 className="text-md mb-2 text-white">{title}</h2>
-    </motion.div>
+      <div className="rounded-b-lg bg-blue-dark p-4 text-center">
+        <h2 className="text-lg text-white">{name}</h2>
+        <h2 className="text-white text-opacity-75">{title}</h2>
+      </div>
+    </div>
   );
 }

@@ -13,7 +13,7 @@ function NavBar() {
     <nav className="flex h-16 w-screen items-center justify-between bg-white">
       <header className="ml-2 h-full cursor-pointer gap-2">
         <Link href="/">
-          <a className="flex h-full items-center">
+          <a>
             <div className="relative aspect-square h-full">
               <Image
                 src="/jhsoi-logo.png"
@@ -21,9 +21,6 @@ function NavBar() {
                 layout="fill"
               />
             </div>
-            <h1 className="bg-gradient-to-r from-blue-dark to-blue-light bg-clip-text text-4xl font-bold text-transparent">
-              JHSOI
-            </h1>
           </a>
         </Link>
       </header>
